@@ -99,7 +99,9 @@ export default async function AppLayout({ children }: { children: React.ReactNod
             <div className="mx-4 mt-6 grid grid-cols-2 gap-px border border-[#2d333b]">
               <div className="bg-[#161b22] p-3">
                 <div className="text-[9px] uppercase tracking-widest text-zinc-500">Total XP</div>
-                <div className="mt-1 font-serif text-lg leading-none text-white">{xp.toLocaleString()}</div>
+                <div className="mt-1 font-serif text-lg leading-none text-white">
+                  {xp.toLocaleString()}
+                </div>
               </div>
               <div className="bg-[#161b22] p-3">
                 <div className="text-[9px] uppercase tracking-widest text-zinc-500">Merged PRs</div>
@@ -108,7 +110,9 @@ export default async function AppLayout({ children }: { children: React.ReactNod
                 </div>
               </div>
               <div className="bg-[#161b22] p-3">
-                <div className="text-[9px] uppercase tracking-widest text-zinc-500">Open Issues</div>
+                <div className="text-[9px] uppercase tracking-widest text-zinc-500">
+                  Open Issues
+                </div>
                 <div className="mt-1 font-serif text-lg leading-none text-white">
                   {openIssuesCount.toString().padStart(2, '0')}
                 </div>
@@ -125,7 +129,9 @@ export default async function AppLayout({ children }: { children: React.ReactNod
             {/* Mentor Chat */}
             {mentorHandle && (
               <div className="mx-4 mt-4 border border-[#2d333b] p-3">
-                <div className="mb-2 text-[9px] uppercase tracking-widest text-zinc-500">Assigned Mentor</div>
+                <div className="mb-2 text-[9px] uppercase tracking-widest text-zinc-500">
+                  Assigned Mentor
+                </div>
                 <div className="mb-3 flex items-center gap-2">
                   <div className="flex h-7 w-7 shrink-0 items-center justify-center bg-zinc-800 text-[10px] uppercase text-zinc-400">
                     {mentorHandle.substring(0, 2).toUpperCase()}
